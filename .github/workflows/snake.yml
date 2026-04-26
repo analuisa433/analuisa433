@@ -10,16 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Generate snake animation
+      - name: Generate snake
         uses: Platane/snk@master
         with:
           github_user_name: analuisa433
-          svg_out_path: dist/snake.svg
+          svg_out_path: dist/github-contribution-grid-snake.svg
 
-      - name: Push to output branch
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: output
