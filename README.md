@@ -111,7 +111,7 @@ Busco aprendizado contínuo e evolução na área de TI.
 ## 🐍 Contribuições
 
 <p align="center">
-<img src="https://github.com/analuisa433/analuisa433/blob/output/github-contribution-grid-snake.svg"/>
+<img src="https://raw.githubusercontent.com/analuisa433/analuisa433/output/snake.svg"/>
 </p>
 
 ---
