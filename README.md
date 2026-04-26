@@ -108,13 +108,6 @@ Busco aprendizado contínuo e evolução na área de TI.
 
 ---
 
-## 🐍 Contribuições
-
-<p align="center">
-![snake](https://raw.githubusercontent.com/analuisa433/analuisa433/output/snake.svg)
-</p>
----
-
 ## 💖 Encerramento
 
 <p align="center">
