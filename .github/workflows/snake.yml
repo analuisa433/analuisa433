@@ -10,12 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: Platane/snk@master
+      - name: Generate snake
+        uses: Platane/snk@master
         with:
           github_user_name: analuisa433
           svg_out_path: dist/snake.svg
 
-      - name: Push snake to output branch
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
