@@ -1,4 +1,4 @@
-name: Snake Animation
+name: Generate Snake
 
 on:
   schedule:
@@ -10,15 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate snake
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate snake animation
         uses: Platane/snk@master
         with:
           github_user_name: analuisa433
           svg_out_path: dist/snake.svg
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Push to output branch
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
-          publish_branch: output
+          branch: output
+          folder: dist
